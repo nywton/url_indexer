@@ -1,0 +1,10 @@
+version: '3.6'
+
+services:
+  mongodb:
+    image: mongo:4.1
+    environment:
+      MONGO_INITDB_DATABASE: helpdesk_api_development
+    ports:
+      - 27017:27017
+
