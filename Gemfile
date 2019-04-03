@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
 
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '~> 5.2.2'
+
 gem 'puma', '~> 3.11'
 
 gem 'mongoid',  '7.0.2'
@@ -13,10 +16,8 @@ gem 'mongoid-uuid', '1.3.0'
 
 gem 'mongoid_auto_inc', '0.1.0'
 
-gem 'simple_form', '4.1.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-
 # gem 'bcrypt', '~> 3.1.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
